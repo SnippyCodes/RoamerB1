@@ -4,38 +4,41 @@
     <shared>
       <config />
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
+        <config>
+          <theme>@style/Theme.Roamr</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml">
+        <config>
+          <theme>@style/Theme.Roamr</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml">
+        <config>
+          <theme>@style/Theme.Roamr</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53647e2b-7cc1-44a8-8396-cf4bca2f0140" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AndroidProjectSystem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/easycode.ignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
+    <list default="true" id="53647e2b-7cc1-44a8-8396-cf4bca2f0140" name="Changes" comment="feat: Implement home screen with bottom navigation and translator UI&#10;&#10;This commit introduces the main home screen for the application, featuring a bottom navigation bar and a functional translator UI.&#10;&#10;Key changes include:&#10;- Added `RoamrHomeScreen.kt` which sets up a Scaffold with a TopAppBar and a NavHost.&#10;- Implemented a `BottomNavigationBar` with five items: Map, Currency, Translate, AI, and Lost Mode.&#10;- Created the `TranslatorScreen` with language selection dropdowns and text fields for input and output.&#10;- Removed the initial placeholder &quot;Greeting&quot; composable from `MainActivity`.&#10;- Updated `MainActivity` to display the new home screen with a gradient background that adapts to the system's dark/light theme.&#10;- Upgraded project JDK from 17 to 21.&#10;- Updated various AndroidX and Compose dependencies to newer versions.&#10;- Added dependencies for navigation-compose and material-icons-extended.">
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/io/arsh/roamr/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/io/arsh/roamr/MainActivity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=RZ8T60JQCFN)]" />
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\Shreeshant\.android\avd\Medium_Phone.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -61,7 +64,19 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -70,13 +85,13 @@
     &quot;assignee&quot;: &quot;Arsh-Pathan&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Arsh-Pathan/Roamr.git&quot;,
-    &quot;accountId&quot;: &quot;2da5ecb4-939d-42ec-a3f8-db94e2169f6d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Arsh-Pathan/Roamr.git",
+    "accountId": "0bf1055f-251a-4c76-a2fe-a8b7b4739171"
   }
-}</component>
-  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\ArshPathan\.gradle\wrapper\dists\gradle-8.13-bin\5xuhj0ry160q40clulazy9h7d\gradle-8.13" javaHome="C:\Program Files\Java\jdk-17" gradleVersion="8.13" />
+}]]></component>
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\Shreeshant\.gradle\wrapper\dists\gradle-8.13-bin\5xuhj0ry160q40clulazy9h7d\gradle-8.13" javaHome="C:\Program Files\Java\jdk-21" gradleVersion="8.13" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -85,20 +100,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Android App.app.executor": "Run",
+    "Compose Preview.RoamrHomeScreenPreview.executor": "Run",
+    "Gradle.Build Roamr.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "shreeshant",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
-}</component>
+}]]></component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Signing Configs" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Shreeshant\StudioProjects\Roamr\app\src\main\res\font" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Roamr.app" />
@@ -121,11 +156,40 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <option name="DEBUGGER_TYPE" value="Java" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
       <Java>
         <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
         <option name="DEBUG_SANDBOX_SDK" value="false" />
       </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_PROFILING_ENABLED" value="false" />
@@ -152,6 +216,43 @@
       <option name="presentableId" value="Default" />
       <updated>1762065674913</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat: Implement home screen with bottom navigation and translator UI&#10;&#10;This commit introduces the main home screen for the application, featuring a bottom navigation bar and a functional translator UI.&#10;&#10;Key changes include:&#10;- Added `RoamrHomeScreen.kt` which sets up a Scaffold with a TopAppBar and a NavHost.&#10;- Implemented a `BottomNavigationBar` with five items: Map, Currency, Translate, AI, and Lost Mode.&#10;- Created the `TranslatorScreen` with language selection dropdowns and text fields for input and output.&#10;- Removed the initial placeholder &quot;Greeting&quot; composable from `MainActivity`.&#10;- Updated `MainActivity` to display the new home screen with a gradient background that adapts to the system's dark/light theme.&#10;- Upgraded project JDK from 17 to 21.&#10;- Updated various AndroidX and Compose dependencies to newer versions.&#10;- Added dependencies for navigation-compose and material-icons-extended.">
+      <option name="closed" value="true" />
+      <created>1762084358786</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762084358786</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: Implement home screen with bottom navigation and translator UI&#10;&#10;This commit introduces the main home screen for the application, featuring a bottom navigation bar and a functional translator UI.&#10;&#10;Key changes include:&#10;- Added `RoamrHomeScreen.kt` which sets up a Scaffold with a TopAppBar and a NavHost.&#10;- Implemented a `BottomNavigationBar` with five items: Map, Currency, Translate, AI, and Lost Mode.&#10;- Created the `TranslatorScreen` with language selection dropdowns and text fields for input and output.&#10;- Removed the initial placeholder &quot;Greeting&quot; composable from `MainActivity`.&#10;- Updated `MainActivity` to display the new home screen with a gradient background that adapts to the system's dark/light theme.&#10;- Upgraded project JDK from 17 to 21.&#10;- Updated various AndroidX and Compose dependencies to newer versions.&#10;- Added dependencies for navigation-compose and material-icons-extended.">
+      <option name="closed" value="true" />
+      <created>1762092259347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762092259347</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Implement home screen with bottom navigation and translator UI&#10;&#10;This commit introduces the main home screen for the application, featuring a bottom navigation bar and a functional translator UI.&#10;&#10;Key changes include:&#10;- Added `RoamrHomeScreen.kt` which sets up a Scaffold with a TopAppBar and a NavHost.&#10;- Implemented a `BottomNavigationBar` with five items: Map, Currency, Translate, AI, and Lost Mode.&#10;- Created the `TranslatorScreen` with language selection dropdowns and text fields for input and output.&#10;- Removed the initial placeholder &quot;Greeting&quot; composable from `MainActivity`.&#10;- Updated `MainActivity` to display the new home screen with a gradient background that adapts to the system's dark/light theme.&#10;- Upgraded project JDK from 17 to 21.&#10;- Updated various AndroidX and Compose dependencies to newer versions.&#10;- Added dependencies for navigation-compose and material-icons-extended." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Implement home screen with bottom navigation and translator UI&#10;&#10;This commit introduces the main home screen for the application, featuring a bottom navigation bar and a functional translator UI.&#10;&#10;Key changes include:&#10;- Added `RoamrHomeScreen.kt` which sets up a Scaffold with a TopAppBar and a NavHost.&#10;- Implemented a `BottomNavigationBar` with five items: Map, Currency, Translate, AI, and Lost Mode.&#10;- Created the `TranslatorScreen` with language selection dropdowns and text fields for input and output.&#10;- Removed the initial placeholder &quot;Greeting&quot; composable from `MainActivity`.&#10;- Updated `MainActivity` to display the new home screen with a gradient background that adapts to the system's dark/light theme.&#10;- Upgraded project JDK from 17 to 21.&#10;- Updated various AndroidX and Compose dependencies to newer versions.&#10;- Added dependencies for navigation-compose and material-icons-extended." />
+  </component>
+  <component name="play_dynamic_filters_status">
+    <option name="appIdToCheckInfo">
+      <map>
+        <entry key="io.arsh.roamr">
+          <value>
+            <CheckInfo lastCheckTimestamp="1762077023460" />
+          </value>
+        </entry>
+        <entry key="io.arsh.roamr.test">
+          <value>
+            <CheckInfo lastCheckTimestamp="1762077023460" />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
