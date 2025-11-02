@@ -27,6 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53647e2b-7cc1-44a8-8396-cf4bca2f0140" name="Changes" comment="feat: Implement home screen with bottom navigation and translator UI&#10;&#10;This commit introduces the main home screen for the application, featuring a bottom navigation bar and a functional translator UI.&#10;&#10;Key changes include:&#10;- Added `RoamrHomeScreen.kt` which sets up a Scaffold with a TopAppBar and a NavHost.&#10;- Implemented a `BottomNavigationBar` with five items: Map, Currency, Translate, AI, and Lost Mode.&#10;- Created the `TranslatorScreen` with language selection dropdowns and text fields for input and output.&#10;- Removed the initial placeholder &quot;Greeting&quot; composable from `MainActivity`.&#10;- Updated `MainActivity` to display the new home screen with a gradient background that adapts to the system's dark/light theme.&#10;- Upgraded project JDK from 17 to 21.&#10;- Updated various AndroidX and Compose dependencies to newer versions.&#10;- Added dependencies for navigation-compose and material-icons-extended.">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,12 +85,12 @@
     &quot;assignee&quot;: &quot;Arsh-Pathan&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Arsh-Pathan/Roamr.git&quot;,
-    &quot;accountId&quot;: &quot;2da5ecb4-939d-42ec-a3f8-db94e2169f6d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Arsh-Pathan/Roamr.git",
+    "accountId": "0bf1055f-251a-4c76-a2fe-a8b7b4739171"
   }
-}</component>
+}]]></component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\Shreeshant\.gradle\wrapper\dists\gradle-8.13-bin\5xuhj0ry160q40clulazy9h7d\gradle-8.13" javaHome="C:\Program Files\Java\jdk-21" gradleVersion="8.13" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -223,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762084358786</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: Implement home screen with bottom navigation and translator UI&#10;&#10;This commit introduces the main home screen for the application, featuring a bottom navigation bar and a functional translator UI.&#10;&#10;Key changes include:&#10;- Added `RoamrHomeScreen.kt` which sets up a Scaffold with a TopAppBar and a NavHost.&#10;- Implemented a `BottomNavigationBar` with five items: Map, Currency, Translate, AI, and Lost Mode.&#10;- Created the `TranslatorScreen` with language selection dropdowns and text fields for input and output.&#10;- Removed the initial placeholder &quot;Greeting&quot; composable from `MainActivity`.&#10;- Updated `MainActivity` to display the new home screen with a gradient background that adapts to the system's dark/light theme.&#10;- Upgraded project JDK from 17 to 21.&#10;- Updated various AndroidX and Compose dependencies to newer versions.&#10;- Added dependencies for navigation-compose and material-icons-extended.">
+      <option name="closed" value="true" />
+      <created>1762092259347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762092259347</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
