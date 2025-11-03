@@ -1,20 +1,22 @@
 package io.arsh.roamr
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.background
-import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.runtime.Composable
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.graphics.Brush
-import androidx.compose.ui.graphics.Color
-import io.arsh.roamr.ui.home.RoamrHomeScreen
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.runanywhere.sdk.public.RunAnywhere
+import io.arsh.roamr.ui.ChatScreen
+import io.arsh.roamr.ui.ChatViewModel
 import io.arsh.roamr.ui.theme.RoamrTheme
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,25 +24,38 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             RoamrTheme {
-                val lightGradient = Brush.linearGradient(
-                    colors = listOf(Color.White, Color(0xFFA8D7F6)),
-                    start = Offset(0f, 400f),
-                    end = Offset(400f, 0f)
-                )
-                val darkGradient = Brush.verticalGradient(
-                    colors = listOf(Color(0xFF00008B), Color(0xFF000000))
-                )
-
-                val gradient = if (isSystemInDarkTheme()) darkGradient else lightGradient
-
-                Box(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .background(gradient)
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
                 ) {
-                    RoamrHomeScreen()
+                    val chatViewModel: ChatViewModel = viewModel()
+                    val coroutineScope = rememberCoroutineScope()
+
+                    DisposableEffect(Unit) {
+                        coroutineScope.launch {
+                            try {
+                                val modelName = "SmolLM2 360M Q8_0"
+
+                                val availableModels = RunAnywhere.availableModels()
+                                val targetModel = availableModels.find { it.name == modelName }
+
+                                if (targetModel != null && targetModel.isDownloaded) {
+                                    val success = RunAnywhere.loadModel(targetModel.id)
+                                    Log.d("MainActivity", "Model load success: $success")
+                                } else {
+                                    Log.w("MainActivity", "Model '$modelName' not downloaded. Chat will fail until it is.")
+                                }
+                            } catch (e: Exception) {
+                                Log.e("MainActivity", "Error during model setup: ${e.message}")
+                            }
+                        }
+                        onDispose {}
+                    }
+
+                    ChatScreen(viewModel = chatViewModel)
                 }
             }
         }
     }
 }
+

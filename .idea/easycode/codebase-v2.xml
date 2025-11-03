@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="com.obiscr.chatgpt.settings.EasyCodeState">
+    <option name="projectFiles" value="$PROJECT_DIR$/app/src/androidTest/java/io/arsh/roamr/ExampleInstrumentedTest.kt;C:/Users/ArshPathan/OneDrive/Desktop/Roamr/app/src/main/java/io/arsh/roamr/ui/theme/Color.kt;C:/Users/ArshPathan/OneDrive/Desktop/Roamr/app/src/main/java/io/arsh/roamr/ui/theme/Theme.kt;C:/Users/ArshPathan/OneDrive/Desktop/Roamr/app/src/main/java/io/arsh/roamr/ui/theme/Type.kt;C:/Users/ArshPathan/OneDrive/Desktop/Roamr/app/src/main/java/io/arsh/roamr/ChatViewModel.kt;C:/Users/ArshPathan/OneDrive/Desktop/Roamr/app/src/main/java/io/arsh/roamr/MainActivity.kt;C:/Users/ArshPathan/OneDrive/Desktop/Roamr/app/src/main/java/io/arsh/roamr/MyApplication.kt;C:/Users/ArshPathan/OneDrive/Desktop/Roamr/app/src/test/java/io/arsh/roamr/ExampleUnitTest.kt;C:/Users/ArshPathan/OneDrive/Desktop/Roamr/app/build.gradle.kts;C:/Users/ArshPathan/OneDrive/Desktop/Roamr/build.gradle.kts;C:/Users/ArshPathan/OneDrive/Desktop/Roamr/settings.gradle.kts" />
+  </component>
+</project>
