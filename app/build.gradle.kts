@@ -37,10 +37,12 @@ android {
 }
 
 dependencies {
-
+	implementation(files("libs/RunAnywhereKotlinSDK-release.aar"))
+    implementation(files("libs/runanywhere-llm-llamacpp-release.aar"))
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+	implementation ("com.google.mlkit:translate:17.0.3")
     implementation(files("libs/RunAnywhereKotlinSDK-release.aar"))
     implementation(files("libs/runanywhere-llm-llamacpp-release.aar"))
-
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
     implementation("androidx.core:core-ktx:1.17.0")
